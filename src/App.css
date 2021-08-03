@@ -11,6 +11,8 @@ body {
 }
 .nav-container{
   background-color:#FFC500;
+  /* background: linear-gradient(0deg,black,#FFC500 40%); */
+  /* linear-gradient(0deg, blue, green 40%, red); */
   /* width:100vw; */
 }
 .navbar-icons {
@@ -34,9 +36,14 @@ background-color:black;
 border-radius: 40px 5px 50px 10px;
 box-shadow:10px 5px 9px whitesmoke;
 }
-
+.logo{
+  font-weight: 900;
+  font-size: 2rem;
+}
 i{
-  margin:5px;
+  margin-right:5px;
+  margin-left:20px;
+
 
 }
 nav{
@@ -56,4 +63,61 @@ nav>ul>li>a{
   text-decoration: none;
   font-weight: 900;
 
+}
+.hero-section{
+  position:relative;
+}
+.ReactPlayer{
+  width: 100%;
+  height: 80vh;
+  /* position:relative; */
+object-fit: cover;
+}
+video{
+  object-fit:cover;
+}
+.hero-overlay {
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-wrapper-box{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  color:#fff; 
+  background: linear-gradient(180deg,transparent 80%,black);
+
+}
+.hero-wrapper-box p{
+  font-size:4.5rem;
+  
+}
+.dream{
+  font-size:5rem;
+  background-color: #FFC500;
+  color:black;
+  border-color:black;
+  border-width:3rem;
+  border-radius:10px/20px;
+  padding:5px;
+  padding-top:20px;
+  padding-bottom:20px;
+
+
+}
+.discover-button{
+  padding:28px;
+  margin:6px;
+  font-size: 2.5rem;
+  background-color:black;
+  color:#FFC500;
+  /* align-items:center; */
+  cursor:pointer;
+  border-radius: 6%;
 }
