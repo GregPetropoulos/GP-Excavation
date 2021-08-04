@@ -21,6 +21,12 @@ const Hero = () => {
           <p>
             Build Your <span className='dream'>Dream</span>
           </p>
+          <div>
+
+          <p className='hero-message' style={{fontSize:'1rem'}}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+          </p>
+          </div>
 
           <Link to='/projects'>
             <Button className='discover-button'>Discover</Button>
