@@ -4,7 +4,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 // Will need to add media query  for md and sm in separate style sheet or inline
 import { Spin as Hamburger } from 'hamburger-react';
 import { useTransition, animated } from 'react-spring';
-import {Menu} from './Menu'
+import { Menu } from './Menu';
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -19,17 +19,19 @@ const NavBar = () => {
     enter: { opacity: 1 },
     leave: { opacity: 0 }
   });
-   
-  const closeMenu =() =>{
-      setOpen(!isOpen)
-  }
-    return (
-        <Container className='nav-container'>
+
+  const closeMenu = () => {
+    setOpen(!isOpen);
+  };
+  return (
+    <Container className='nav-container'>
       <Row>
         <Col className='nav-quote-btn'>
           <Button className='quote-btn'>Free Quote</Button>
         </Col>
-
+        <Col className='follow-heading'>
+          <h3>Follow us</h3>
+        </Col>
         <Col className='navbar-icons'>
           <i className='fab fa-instagram'></i>
           <i className='fab fa-facebook-f'></i>
@@ -76,16 +78,16 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
-            
+
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
               onClick={() => setOpen(!isOpen)}
-              />
+            />
 
-              {isOpen && <Menu onClick={()=>setOpen(!isOpen)}/>}
-        
-{/* 
+            {isOpen && <Menu onClick={closeMenu}/>}
+
+            {/* 
               transitions(
                  ({ props, item, key }) =>
                  item && (
@@ -98,7 +100,6 @@ const NavBar = () => {
                  )
                  )}
      } */}
-                
           </nav>
         </Col>
       </Row>

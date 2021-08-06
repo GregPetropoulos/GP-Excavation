@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
   return (
     <Row>
-      <Col>
+      <Col className='contact-icons'>
         <i class='fas fa-home'>Spring Valley Lake, California, United States</i>
-        <i class='fas fa-envelope-square'>760-605-2024</i>
-        <i class='fas fa-mobile-alt'>
+        <i class='fas fa-mobile-alt'>760-605-2024</i>
+        <i class='fas fa-envelope-square '>
           <a
             href='mailto: gregpetropoulos@yahoo.com'
             target='_blank'

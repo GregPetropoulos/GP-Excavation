@@ -15,10 +15,17 @@ body {
   /* linear-gradient(0deg, blue, green 40%, red); */
   /* width:100vw; */
 }
+.follow-heading{
+margin-left:1.9%;
+color: whitesmoke;
+
+}
 .navbar-icons {
   color: whitesmoke;
   display: flex;
   padding-bottom:1%;
+margin-left:.5%;
+
 }
 
 .nav-quote-btn {
@@ -160,7 +167,8 @@ video{
   width: 100%;
   /* padding:5%; */
   /* margin:5%; */
-
-
+}
+.contact-icons{
+  display:flex;
 
 }

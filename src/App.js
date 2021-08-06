@@ -6,20 +6,21 @@ import NavBar from './component/layout/NavBar';
 import Home from './component/layout/Home';
 import About from './component/layout/About';
 import Contact from './component/layout/Contact';
-import Service from './component/layout/Service';
+import Service from './component/layout/Services';
+import Project from './component/layout/Projects';
+
 
 function App() {
   return (
     <Router>
       <NavBar />
-{/* <Hero/> */}
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/home' component={Home} />
-
         <Route exact path='/about' component={About} />
+        <Route exact path='/services' component={Service} />
+        <Route exact path='/projects' component={Project} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/service' component={Service} />
       </Switch>
     </Router>
   );
