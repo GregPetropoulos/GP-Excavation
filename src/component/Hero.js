@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 // import heroVideo from './HeroVideo.mp4'
-import heroVideo from '../../videos/HeroVideo.mp4';
+import heroVideo from '../videos/HeroVideo.mp4';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 

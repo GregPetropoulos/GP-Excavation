@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-export const Menu = ({ onClick})=> {
+
+
+export const Menu = ({onClick})=> {
     return (
         
-            <div className='show-mobile-nav' onClick={onClick}>
+
+<div className='show-mobile-nav' onClick={onClick} >
    
            <ul className='mobile-link-items'>
              <li>

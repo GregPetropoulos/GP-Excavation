@@ -7,11 +7,11 @@ const Contact = () => {
   return (
     <Row>
       <Col className='contact-icons'>
-        <i class='fas fa-home'>Spring Valley Lake, California, United States</i>
-        <i class='fas fa-mobile-alt'>760-605-2024</i>
-        <i class='fas fa-envelope-square '>
+        <i className='fas fa-home'>Spring Valley Lake, California, United States</i>
+        <i className='fas fa-mobile-alt'>760-605-2024</i>
+        <i className='fas fa-envelope-square '>
           <a
-            href='mailto: gregpetropoulos@yahoo.com'
+            href='mailto: gpetroconstruction@gmail.com'
             target='_blank'
             rel='noopener noreferrer'
             style={{ color: '#08a7ce' }}

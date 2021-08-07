@@ -3,22 +3,10 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 // Will need to add media query  for md and sm in separate style sheet or inline
 import { Spin as Hamburger } from 'hamburger-react';
-import { useTransition, animated } from 'react-spring';
-import { Menu } from './Menu';
+import { Menu } from '../Menu';
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
-
-  //   const transitions = useTransition(isOpen, {
-  //     from: { opacity: 0, transform: 'translateX(-100%)' },
-  //     enter: { opacity: 1, transform: 'translateX(0%)' },
-  //     leave: { opacity: 0, transform: 'translateX(-100%)' }
-  //   });
-  const transitions = useTransition(isOpen, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 }
-  });
 
   const closeMenu = () => {
     setOpen(!isOpen);
@@ -78,28 +66,17 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
-
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
+              label="Show menu"
               onClick={() => setOpen(!isOpen)}
+              color='whitesmoke'
+              size={40}
+
             />
-
-            {isOpen && <Menu onClick={closeMenu}/>}
-
-            {/* 
-              transitions(
-                 ({ props, item, key }) =>
-                 item && (
-                     <animated.div
-                     key={key}
-                     style={props}
-                     >
-                  
-                   </animated.div>
-                 )
-                 )}
-     } */}
+            <div className='hamburger-spacer'></div>
+            {isOpen ? <Menu onClick={closeMenu} /> : ''}
           </nav>
         </Col>
       </Row>
