@@ -192,10 +192,10 @@ video {
 .footer-contact-wrapper i {
   padding: 15px;
 }
-.footer-email-link{
-text-decoration:none;
-color:black;
-  }
+.footer-email-link {
+  text-decoration: none;
+  color: black;
+}
 .footer-newsletter-wrapper {
   padding: 2%;
   /* margin:1%; */
@@ -207,20 +207,26 @@ color:black;
   justify-content: space-between;
   flex-direction: column;
 }
-.counter-wrapper{
+.counter-wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffc500;
+  width: 100%;
+  height: 100%;
+}
+.counter-items {
+  font-size: 3.2rem;
+  width: 100%;
+  height: 100%;
+}
+.counter-title {
+  width: 100%;
+  height: 100%;
+}
+.parent-fliprow{
   display:flex;
   justify-content: center;
-  background-color:#ffc500;
-padding:20px;
-/* align-items: center; */
 }
-.counter-items{
-color:red;
-margin:15px;
-font-size: 3.2rem;
+.flipcard-container{
 
-}
-.counter-title{
-  padding:3px;
-  margin:6px;
 }
