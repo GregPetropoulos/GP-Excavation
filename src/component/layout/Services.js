@@ -9,11 +9,13 @@ const Services = () => {
   };
 
   return (
-    <Row className='parent-fliprow' >
-        {/* <Col> */}
-      <Col>
+    <Row className='service-card-container' >
+    <h1>Services</h1>
+        <Row className='service-card-row1'>
+      <Col className ='service-card-column'>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+          cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/road-worker.png" alt='construction worker digging'/>}
+
           title='Trenching'
           text={
               <ul>
@@ -31,7 +33,8 @@ const Services = () => {
       </Col>
       <Col>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+        cardIcon={<i className='fas fa-ruler-combined'></i>}
+
           title='Grading'
           text={
               <ul>
@@ -47,7 +50,7 @@ const Services = () => {
       </Col>
       <Col>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+          cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/tiffin.png" alt='septic tank'/>}
           title='Septic Install'
           text={
               <ul>
@@ -61,9 +64,12 @@ const Services = () => {
           }
           />
       </Col>
+      </Row>
+      <Row className='service-card-row2'>
+
       <Col>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+          cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/demolition-excavator.png" alt='wrecking ball'/>}
           title='Land Clearing'
           text={
               <ul>
@@ -79,7 +85,7 @@ const Services = () => {
       </Col>
       <Col>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+          cardIcon={< img src="https://img.icons8.com/ios-filled/50/000000/jackhammer.png" alt='jackhammer'/>}
           title='Operate Machine Rental'
           text={
               <ul>
@@ -96,7 +102,7 @@ const Services = () => {
 
       <Col>
         <ServicesCard
-          cardIcon={<i class='fas fa-ruler-combined'></i>}
+          cardIcon={ <img src="https://img.icons8.com/ios-glyphs/50/000000/asphalt-paver.png" alt='paver'/>}
           title='Compaction'
           text={
               <ul>
@@ -110,6 +116,7 @@ const Services = () => {
           }
           />
       </Col>
+          </Row>
           {/* </Col> */}
     </Row>
   );

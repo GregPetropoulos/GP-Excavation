@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 
-// show this card image if card is flipped on mouse over
+// show this card image  and or text if card is flipped on mouse over and flip back on mouse leave
 
 const ServicesCard = ({ title, text, cardIcon, cardFlipped }) => {
   return (
@@ -11,9 +11,9 @@ const ServicesCard = ({ title, text, cardIcon, cardFlipped }) => {
       <div className='card-icon'>{cardIcon}</div>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text text={text}>
+        {/* <Card.Text text={text}>
           <p>{text}</p>
-        </Card.Text>
+        </Card.Text> */}
       </Card.Body>
     </Card>
   );
