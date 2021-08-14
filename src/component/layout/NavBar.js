@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import FramerNavMenu from '../FramerNavMenu';
+
 // Will need to add media query  for md and sm in separate style sheet or inline
-import { Spin as Hamburger } from 'hamburger-react';
-import { Menu } from '../Menu';
+// import { Spin as Hamburger } from 'hamburger-react';
+// import { Menu } from '../Menu';
 
 const NavBar = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  const closeMenu = () => {
-    setOpen(!isOpen);
-  };
+  // const [isOpen, setOpen] = useState(false);
+
+  // const closeMenu = () => {
+  //   setOpen(!isOpen);
+  //};
+
+
   return (
     <Container className='nav-container'>
       <Row>
@@ -27,6 +33,7 @@ const NavBar = () => {
           <i className='fab fa-linkedin'></i>
         </Col>
       </Row>
+
       <Row>
         <Col>
           <div>
@@ -66,20 +73,22 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
-            <Hamburger
+            {/* new hamburger */}
+            {/* <Hamburger
               toggled={isOpen}
               toggle={setOpen}
               label="Show menu"
               onClick={() => setOpen(!isOpen)}
               color='whitesmoke'
               size={40}
-
-            />
-            <div className='hamburger-spacer'></div>
-            {isOpen ? <Menu onClick={closeMenu} /> : ''}
+              
+              />
+              <div className='hamburger-spacer'></div>
+            {isOpen ? <Menu onClick={closeMenu} /> : ''} */}
           </nav>
         </Col>
       </Row>
+            <FramerNavMenu/>
     </Container>
   );
 };
