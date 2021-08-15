@@ -4,7 +4,7 @@ import { motion, useCycle } from 'framer-motion';
 import { useDimensions } from './hooks/dimensions';
 import { MenuToggle } from './MenuToggle';
 import { Navigation } from './Navigation';
-import { Container, Col, Row } from 'react-bootstrap';
+// import { Container, Col, Row } from 'react-bootstrap';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -16,7 +16,7 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+    clipPath: 'circle(20px at 40px 40px)',
     transition: {
       delay: 0.5,
       type: 'spring',

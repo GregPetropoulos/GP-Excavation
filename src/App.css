@@ -3,14 +3,24 @@
   margin: 0;
   padding: 0;
 }
-body {
+html{
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffc500;
+  /* background-color: green; */
   font-size: 1rem;
   line-height: 1.6;
-  /* background-color: #FFC500; */
-  font-family: 'Work Sans', sans-serif;
+
+  /* width:100%; */
+
+}
+body {
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+  /* justify-content: center; */
 }
 .nav-container {
-  background-color: #ffc500;
+  /* background-color: #ffc500; */
   /* background: linear-gradient(0deg,black,#FFC500 40%); */
   /* linear-gradient(0deg, blue, green 40%, red); */
   /* width:100vw; */
@@ -210,9 +220,10 @@ video {
 .counter-wrapper {
   display: flex;
   justify-content: space-around;
-  background-color: #ffc500;
-  width: 100%;
-  height: 100%;
+  /* background-color: #ffc500; */
+  /* overflow: hidden; */
+  /* width: 100%; */
+  /* height: 100%; */
   padding-bottom: 15px;
 }
 .counter-items {
@@ -282,17 +293,19 @@ video {
 }
 
 /* for framer motion nav menu etc */
+
+
 .body-nav-wrapper {
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
+  /* height: 100vh; */
+  /* background: linear-gradient(180deg,#ffc500 0%, rgb(250, 150, 1) 100%); */
   overflow: hidden;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   bottom: 0;
@@ -303,8 +316,10 @@ video {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
-  background: #fff;
+  width: 100%;
+  /* background: black; */
+  background: linear-gradient(180deg,#ffc500 0%, rgb(250, 150, 1) 100%);
+
 }
 
 .framer-btn-menu {
@@ -320,7 +335,8 @@ video {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: transparent;
+  background: #ffc500;
+  border-color: #ffc500;
 }
 
 .framer-li,
@@ -371,9 +387,4 @@ video {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-@media screen and (max-width: 744px) {
-  div.FramerNavMenu {
-    display:none;
-  }
 }

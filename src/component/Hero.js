@@ -4,9 +4,19 @@ import ReactPlayer from 'react-player';
 import heroVideo from '../videos/HeroVideo.mp4';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import styled from 'styled-components';
+
 
 const Hero = () => {
+  const HideDesktopHero = styled.div`
+  @media(max-width: 768px){
+display:none;
+  }
+  `
+  ;
   return (
+    <HideDesktopHero>
+
     <section className='hero-section'>
       <ReactPlayer
         url={heroVideo}
@@ -15,7 +25,7 @@ const Hero = () => {
         muted
         width='100%'
         height='100%'
-      />
+        />
       <div className='hero-overlay'>
         <div className='hero-wrapper-box'>
           <p>
@@ -34,6 +44,8 @@ const Hero = () => {
         </div>
       </div>
     </section>
+        </HideDesktopHero>
+    
   );
 };
 

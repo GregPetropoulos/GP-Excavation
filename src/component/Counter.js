@@ -37,14 +37,13 @@ export default function Counter() {
   });
 
   return (
-      <Container>
+      <Container className='counter-wrapper'>
       
           {/* <animated.div className='counter'>
         {props.val.to((val) => Math.floor(val))}
         </animated.div>
     <h3>state practice</h3> */} 
        
-    <div className='counter-wrapper'> 
        
       <Row>
          <Col>
@@ -87,7 +86,6 @@ export default function Counter() {
           <h3 className='counter-title'>Cups of Coffee</h3>
         </Col>
        </Row>
-    </div>
     </Container> 
   );
 }

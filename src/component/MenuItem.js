@@ -30,7 +30,7 @@ export const MenuItem = ({ i }) => {
       className='framer-li'
     >
       <div className="icon-placeholder" style={style} />
-      <div className="text-placeholder" style={style} />
+      <div className="text-placeholder" style={style} >hello link</div>
     </motion.li>
   );
 };
