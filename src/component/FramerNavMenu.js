@@ -1,24 +1,25 @@
-import  React from "react";
-import { useRef } from "react";
-import { motion, useCycle } from "framer-motion";
-import { useDimensions } from "./hooks/dimensions";
-import { MenuToggle } from "./MenuToggle";
-import { Navigation } from "./Navigation";
+import React from 'react';
+import { useRef } from 'react';
+import { motion, useCycle } from 'framer-motion';
+import { useDimensions } from './hooks/dimensions';
+import { MenuToggle } from './MenuToggle';
+import { Navigation } from './Navigation';
+import { Container, Col, Row } from 'react-bootstrap';
 
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 20,
       restDelta: 2
     }
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: 'circle(30px at 40px 40px)',
     transition: {
       delay: 0.5,
-      type: "spring",
+      type: 'spring',
       stiffness: 400,
       damping: 40
     }
@@ -33,12 +34,12 @@ const FramerNavMenu = () => {
   return (
     <motion.nav
       initial={false}
-      animate={isOpen ? "open" : "closed"}
+      animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
       className='body-nav-wrapper'
     >
-      <motion.div className="framer-background" variants={sidebar} />
+      <motion.div className='framer-background' variants={sidebar} />
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

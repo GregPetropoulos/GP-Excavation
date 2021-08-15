@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import FramerNavMenu from '../FramerNavMenu';
+import styled from 'styled-components';
 
 // Will need to add media query  for md and sm in separate style sheet or inline
 // import { Spin as Hamburger } from 'hamburger-react';
@@ -9,7 +10,14 @@ import FramerNavMenu from '../FramerNavMenu';
 
 const NavBar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
-
+  
+  const ResponsiveMenu = styled.div`
+    @media(min-width: 768px) {
+      background: green;
+      color: red;
+      display:none;
+    }
+  `;
   // const [isOpen, setOpen] = useState(false);
 
   // const closeMenu = () => {
@@ -88,7 +96,10 @@ const NavBar = () => {
           </nav>
         </Col>
       </Row>
+      <ResponsiveMenu>
+
             <FramerNavMenu/>
+      </ResponsiveMenu>
     </Container>
   );
 };
