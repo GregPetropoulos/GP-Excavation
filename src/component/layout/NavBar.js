@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import FramerNavMenu from '../FramerNavMenu';
 import styled from 'styled-components';
 
 // Will need to add media query  for md and sm in separate style sheet or inline
-// import { Spin as Hamburger } from 'hamburger-react';
-// import { Menu } from '../Menu';
+import { Spin as Hamburger } from 'hamburger-react';
+import { MobileMenu } from '../MobileMenu';
 
 const NavBar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -21,12 +20,14 @@ const NavBar = () => {
     @media (max-width: 768px) {
       display: none;
     }
-  `;
-  // const [isOpen, setOpen] = useState(false);
+    `;
 
-  // const closeMenu = () => {
-  //   setOpen(!isOpen);
-  //};
+    // hamburger state
+  const [isOpen, setOpen] = useState(false);
+
+  const closeMenu = () => {
+    setOpen(!isOpen);
+  };
 
   return (
     <>
@@ -87,29 +88,26 @@ const NavBar = () => {
                   </li>
                 </ul>
                 {/* new hamburger */}
-                {/* <Hamburger
+              </nav>
+            </HideDesktopNavBar>
+          </Col>
+        </Row>
+                <ResponsiveMenu>
+
+                 <Hamburger
               toggled={isOpen}
               toggle={setOpen}
               label="Show menu"
               onClick={() => setOpen(!isOpen)}
               color='whitesmoke'
               size={40}
+              className='hamburger'
               
               />
               <div className='hamburger-spacer'></div>
-            {isOpen ? <Menu onClick={closeMenu} /> : ''} */}
-              </nav>
-            </HideDesktopNavBar>
-          </Col>
-        </Row>
+            {isOpen ? <MobileMenu onClick={closeMenu} /> : ''} 
+              </ResponsiveMenu>
       </Container>
-      <Row>
-        <Col>
-          <ResponsiveMenu>
-            <FramerNavMenu />
-          </ResponsiveMenu>
-        </Col>
-      </Row>
     </>
   );
 };

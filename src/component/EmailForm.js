@@ -2,11 +2,14 @@ import React from 'react'
 import {Button, Form} from 'react-bootstrap'
 // Will need to get the email to be sent to db or gpc
 
-
+// need useState, handleclick, handlesubmit, validation, possible redirect
+const handleSubmit =() =>{
+  ''
+}
 
 const EmailForm = (props) => {
     return (
-        <Form>
+        <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />

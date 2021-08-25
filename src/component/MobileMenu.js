@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
-export const Menu = ({onClick})=> {
+export const MobileMenu = ({onClick})=> {
 
     return (
         

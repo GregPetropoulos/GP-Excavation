@@ -143,14 +143,14 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: relative;
   z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 20%;
   background-color: #ffc500;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .mobile-link-items {
   display: flex;
@@ -172,9 +172,11 @@ video {
 .contact-icons {
   display: flex;
 }
-.hamburger-spacer {
-  margin-right: 29px;
+.hamburger{
 }
+/* .hamburger-spacer {
+  margin-right: 29px;
+} */
 .footer-wrapper {
   height: auto;
   padding: 1%;
@@ -220,6 +222,9 @@ video {
 .counter-wrapper {
   display: flex;
   justify-content: space-around;
+  /* position:relative; */
+  /* top: 0px; */
+  /* right: 0px; */
   /* background-color: #ffc500; */
   /* overflow: hidden; */
   /* width: 100%; */
@@ -227,6 +232,8 @@ video {
   padding-bottom: 15px;
 }
 .counter-items {
+  /* position:absolute; */
+
   font-size: 3.2rem;
   width: 100%;
   height: 100%;
@@ -243,7 +250,6 @@ video {
   /* margin:25px; */
   text-align: center;
   width: 100%;
-  height: 100%;
   background-color: whitesmoke;
 }
 
@@ -252,7 +258,6 @@ video {
   justify-content: space-around;
   margin: 20px;
   width: 100%;
-  height: 100%;
 }
 .service-card-row2 {
   display: flex;
@@ -260,7 +265,6 @@ video {
   margin: 20px;
   margin-top: 40px;
   width: 100%;
-  height: 100%;
 }
 .flipcard-container {
   display: flex;
@@ -292,99 +296,15 @@ video {
   padding: 16px;
 }
 
-/* for framer motion nav menu etc */
-
-
-.body-nav-wrapper {
-  width: 100vw;
-  /* height: 100vh; */
-  /* background: linear-gradient(180deg,#ffc500 0%, rgb(250, 150, 1) 100%); */
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
+.profile-image-wrapper{
+padding:10px;
 }
-.framer-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  /* background: black; */
-  background: linear-gradient(180deg,#ffc500 0%, rgb(250, 150, 1) 100%);
-
-}
-
-.framer-btn-menu {
-  outline: none;
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  cursor: pointer;
-  position: absolute;
-  top: 18px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
+.profile-image{
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: #ffc500;
-  border-color: #ffc500;
+
+  object-fit: cover;
+  object-position: center right;
 }
 
-.framer-li,
-.framer-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.framer-ul{
-    padding: 25px;
-    position: absolute;
-    top: 100px;
-    width: 230px;
-  }
-
-.framer-li{
-  list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.icon-placeholder {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  flex: 40px 0;
-  margin-right: 20px;
-}
-
-.text-placeholder {
-  border-radius: 5px;
-  width: 200px;
-  height: 20px;
-  flex: 1;
-}
-
-.refresh {
-  padding: 10px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
