@@ -23,7 +23,7 @@ export const MobileMenu = ({onClick})=> {
                </Link>
              </li>
              <li>
-               <Link to='/services' className='mobile-links'>
+               <Link to='/service' className='mobile-links'>
                  Services
                </Link>
              </li>

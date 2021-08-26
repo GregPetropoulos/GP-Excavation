@@ -5,7 +5,7 @@ import NavBar from './component/layout/NavBar';
 import Home from './component/layout/Home';
 import About from './component/layout/About';
 import Contact from './component/layout/Contact';
-import Service from './component/layout/Services';
+import ServicePage from './component/layout/ServicePage';
 import Projects from './component/layout/Projects';
 
 
@@ -18,7 +18,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/services' component={Service} />
+        <Route exact path='/service' component={ServicePage} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/contact' component={Contact} />
       </Switch>

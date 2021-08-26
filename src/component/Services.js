@@ -1,24 +1,36 @@
 import React, { useState } from 'react';
-import ServicesCard from '../ServicesCard';
+import ServicesCard from './ServicesCard';
 import { Row, Col } from 'react-bootstrap';
+import styled from 'styled-components';
 
 const Services = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const cardFlipped = () => {
     setIsFlipped(!isFlipped);
   };
+  
+
+  // const ResponsiveService = styled.div`
+  // @media (min-width: 768px) {
+  //   display:flex;
+  //   flex-direction:column
+  // },
+
+  // `;
 
   return (
+    // <ResponsiveService>
+
     <Row className='service-card-container' >
     <h1>Services</h1>
-        <Row className='service-card-row1'>
+        <Row md={2} className='service-card-row1'>
       <Col className ='service-card-column'>
-        <ServicesCard
+        <ServicesCard className='service-card'
           cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/road-worker.png" alt='construction worker digging'/>}
-
+          
           title='Trenching'
           text={
-              <ul>
+            <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -32,12 +44,12 @@ const Services = () => {
           />
       </Col>
       <Col>
-        <ServicesCard
+        <ServicesCard className='service-card'
         cardIcon={<i className='fas fa-ruler-combined'></i>}
-
-          title='Grading'
-          text={
-              <ul>
+        
+        title='Grading'
+        text={
+          <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -49,11 +61,11 @@ const Services = () => {
           />
       </Col>
       <Col>
-        <ServicesCard
+        <ServicesCard className='service-card'
           cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/tiffin.png" alt='septic tank'/>}
           title='Septic Install'
           text={
-              <ul>
+            <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -68,11 +80,11 @@ const Services = () => {
       <Row className='service-card-row2'>
 
       <Col>
-        <ServicesCard
+        <ServicesCard className='service-card'
           cardIcon={<img src="https://img.icons8.com/ios-filled/50/000000/demolition-excavator.png" alt='wrecking ball'/>}
           title='Land Clearing'
           text={
-              <ul>
+            <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -84,11 +96,11 @@ const Services = () => {
           />
       </Col>
       <Col>
-        <ServicesCard
+        <ServicesCard className='service-card'
           cardIcon={< img src="https://img.icons8.com/ios-filled/50/000000/jackhammer.png" alt='jackhammer'/>}
           title='Operate Machine Rental'
           text={
-              <ul>
+            <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -101,11 +113,11 @@ const Services = () => {
       </Col>
 
       <Col>
-        <ServicesCard
+        <ServicesCard className='service-card'
           cardIcon={ <img src="https://img.icons8.com/ios-glyphs/50/000000/asphalt-paver.png" alt='paver'/>}
           title='Compaction'
           text={
-              <ul>
+            <ul>
               <li>Utility Trenching</li>
               <li>Small Excavating</li>
               <li>Projects</li>
@@ -119,6 +131,7 @@ const Services = () => {
           </Row>
           {/* </Col> */}
     </Row>
+          // </ResponsiveService>
   );
 };
 

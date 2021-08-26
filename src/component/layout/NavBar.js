@@ -67,7 +67,7 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to='/services' className='desktop-links'>
+                    <Link to='/service' className='desktop-links'>
                       Services
                     </Link>
                   </li>
