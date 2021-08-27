@@ -1,11 +1,11 @@
 import React from 'react'
-import Services from '../Services'
+import FlipCard from '../FlipCard'
 import Contact from './Contact'
 const ServicePage = () => {
     return (
         <>
         <div>
-            <Services/>
+            <FlipCard/>
             <Contact/>
         </div>
         </>

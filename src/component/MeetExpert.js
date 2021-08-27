@@ -3,10 +3,9 @@ import Expert from '../images/expert.jpg';
 import { Col, Row } from 'react-bootstrap';
 const MeetExpert = () => {
   return (
+    <>
     <div className='profile-image-wrapper'>
-      {/* <Row> */}
-      {/* <Row className='expert-spacer'></Row> */}
-      {/* <Col> */}
+
       <img className='profile-image' src={Expert} alt='greg-profile'></img>
       <div className='profile-overlay-icons'>
         <div className='profile-icons-hover'>
@@ -20,13 +19,14 @@ const MeetExpert = () => {
         </div>
       </div>
       <h2> Founder/Owner and Operator.</h2>
-      <p>
-        I am loremVoluptate laboris in consectetur laboris ut aliqua non fugiat
+      <section>
+        I am Greg Petropoulos loremVoluptate laboris in consectetur laboris ut aliqua non fugiat
         mollit ipsum.
-      </p>
+      </section>
       {/* </Col> */}
       {/* </Row> */}
     </div>
+    </>
   );
 };
 

@@ -1,24 +1,22 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Hero from '../Hero';
 import Footer from '../Footer';
 import Counter from '../Counter';
-import Services from '../Services';
 import MeetExpert from '../MeetExpert';
-
-
-
+import FlipCard from '../FlipCard';
+import { Row } from 'react-bootstrap';
 
 const Home = () => {
-    return (
-        <Fragment>
-   <Hero/>
-   <Counter/>
-   <MeetExpert/>
-   <Services/>
-   <Footer/>
-   </Fragment>
-    )
-}
+  return (
+    <Fragment>
+      <Hero />
+      <Counter />
+      <Row className='expert-spacer'></Row>
+      <MeetExpert />
+      <FlipCard />
+      <Footer />
+    </Fragment>
+  );
+};
 
-
-export default Home
+export default Home;

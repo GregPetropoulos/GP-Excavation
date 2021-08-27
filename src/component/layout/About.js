@@ -1,17 +1,57 @@
-import React from 'react'
-import MeetExpert from '../MeetExpert'
+import React from 'react';
+import MeetExpert from '../MeetExpert';
+import { Col, Row } from 'react-bootstrap';
 
 const About = () => {
-    return (
-        <div>
-            <MeetExpert/>
-            <p>Ea ea proident labore cillum tempor proident elit tempor. Non consequat minim sit laboris cillum ipsum. Dolor ipsum incididunt culpa incididunt esse commodo aute occaecat eiusmod elit.
+  return (
+    <Row className='about-wrapper'>
+      <Col>
+        <MeetExpert />
+      </Col>
+      <Col className='about-col1'>
+        <h2>About Us</h2>
+        <p>
+          loremCillum nostrud quis sit eu elit ea velit non. Sunt id quis qui
+          aliqua. Ut officia cupidatat duis non eiusmod ea eiusmod sunt esse
+          nulla aliqua incididunt ad laboris. Lorem sint ullamco adipisicing
+          elit fugiat Lorem ea amet ea proident laboris ullamco amet. Officia
+          pariatur id pariatur velit. Ipsum eiusmod consectetur in nostrud
+          proident irure incididunt excepteur ad irure in Lorem ut. Labore enim
+          nulla incididunt aliqua. Non irure culpa amet quis. Exercitation sint
+          reprehenderit sunt laboris consequat. Reprehenderit nostrud minim
+          commodo excepteur sunt fugiat. Dolore ipsum aliqua amet ut
+          exercitation culpa magna excepteur voluptate non ex minim dolore.
+        </p>
+        <h2>Our History</h2>
+        <p>
+          loremCillum nostrud quis sit eu elit ea velit non. Sunt id quis qui
+          aliqua. Ut officia cupidatat duis non eiusmod ea eiusmod sunt esse
+          nulla aliqua incididunt ad laboris. Lorem sint ullamco adipisicing
+          elit fugiat Lorem ea amet ea proident laboris ullamco amet. Officia
+          pariatur id pariatur velit. Ipsum eiusmod consectetur in nostrud
+          proident irure incididunt excepteur ad irure in Lorem ut. Labore enim
+          nulla incididunt aliqua. Non irure culpa amet quis. Exercitation sint
+          reprehenderit sunt laboris consequat. Reprehenderit nostrud minim
+          commodo excepteur sunt fugiat. Dolore ipsum aliqua amet ut
+          exercitation culpa magna excepteur voluptate non ex minim dolore.
+        </p>
+        <h2>Mission & Vision</h2>
+        <p>
+          loremCillum nostrud quis sit eu elit ea velit non. Sunt id quis qui
+          aliqua. Ut officia cupidatat duis non eiusmod ea eiusmod sunt esse
+          nulla aliqua incididunt ad laboris. Lorem sint ullamco adipisicing
+          elit fugiat Lorem ea amet ea proident laboris ullamco amet. Officia
+          pariatur id pariatur velit. Ipsum eiusmod consectetur in nostrud
+          proident irure incididunt excepteur ad irure in Lorem ut. Labore enim
+          nulla incididunt aliqua. Non irure culpa amet quis. Exercitation sint
+          reprehenderit sunt laboris consequat. Reprehenderit nostrud minim
+          commodo excepteur sunt fugiat. Dolore ipsum aliqua amet ut
+          exercitation culpa magna excepteur voluptate non ex minim dolore.
+        </p>
+  
+      </Col>
+    </Row>
+  );
+};
 
-Anim sunt mollit et veniam do incididunt. Culpa duis minim id esse ut laboris sint irure veniam eu anim reprehenderit sit. Id id in enim occaecat ad. Ex veniam nisi laborum aliquip sunt aliqua aliqua. Labore nulla tempor veniam consequat non exercitation et. Minim officia nostrud tempor cupidatat aute cillum consectetur tempor duis adipisicing occaecat. Consectetur in dolor et sunt ad pariatur ad.
-
-Exercitation ut tempor in labore. Officia laborum amet fugiat aliquip sunt eiusmod dolor. Consequat cillum officia id ea veniam. Sunt nostrud officia ea et incididunt aliquip et. Do cupidatat veniam cillum elit in. Reprehenderit do occaecat elit excepteur ex anim cupidatat sit voluptate. Ipsum reprehenderit labore laborum eiusmod Lorem esse cillum occaecat.</p>
-        </div>
-    )
-}
-
-export default About
+export default About;
