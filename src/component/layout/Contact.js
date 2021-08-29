@@ -1,15 +1,16 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+
 
 const Contact = () => {
   return (
     <Container>
-      <Button>
-        <Link to='/quote-form'>Quote</Link>
-      </Button>
-      <Footer/>
+      {/* <Link to='/quote'>
+        <button>Free Quote</button>
+      </Link> */}
+      <Footer />
     </Container>
   );
 };

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   font-family: 'Work Sans', sans-serif;
   background-color: #ffc500;
   /* background-color: green; */
@@ -11,12 +11,11 @@ html{
   line-height: 1.6;
 
   /* width:100%; */
-
 }
 body {
   min-height: 100vh;
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   /* justify-content: center; */
 }
 .nav-container {
@@ -172,7 +171,7 @@ video {
 .contact-icons {
   display: flex;
 }
-.hamburger{
+.hamburger {
 }
 /* .hamburger-spacer {
   margin-right: 29px;
@@ -243,33 +242,33 @@ video {
   height: 100%;
 }
 
-.expert-spacer{
-  background-color:whitesmoke;
-  height:60px;
-  width:100%;
+.expert-spacer {
+  background-color: whitesmoke;
+  height: 60px;
+  width: 100%;
 }
-.profile-image-wrapper{
-/* padding:4px; */
-margin:25px;
-position:relative;
-width: 250px;
+.profile-image-wrapper {
+  /* padding:4px; */
+  margin: 25px;
+  position: relative;
+  width: 250px;
 }
-.profile-image{
+.profile-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  object-fit: cover; 
-  object-position: center right; 
+  object-fit: cover;
+  object-position: center right;
 
   opacity: 1;
   display: block;
   /* width: 100%; */
   /* height: auto; */
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
-.profile-overlay-icons{
-  transition: .5s ease;
+.profile-overlay-icons {
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 33%;
@@ -279,41 +278,39 @@ width: 250px;
   text-align: center;
 }
 .profile-image-wrapper:hover .profile-image {
-    opacity: 0.3;
-  }
-  .profile-image-wrapper:hover .profile-overlay-icons {
-    opacity: 1;
-  }
-  .profile-icons-hover{
-    background-color: #FF9700;
+  opacity: 0.3;
+}
+.profile-image-wrapper:hover .profile-overlay-icons {
+  opacity: 1;
+}
+.profile-icons-hover {
+  background-color: #ff9700;
   color: whitesmoke;
   font-size: 16px;
   padding: 16px 32px;
-  border-radius:6px/6%;
-  }
-
-
+  border-radius: 6px/6%;
+}
 /* flipcard 2nd attempt */
 .service-card-container {
-  display:'flex';
+  display: 'flex';
   width: 100%;
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
 }
-.flipcard-row1{
-  display:flex;
+.flipcard-row1 {
+  display: flex;
   justify-content: space-around;
 }
-.flipcard-row2{
-  display:flex;
+.flipcard-row2 {
+  display: flex;
   justify-content: space-around;
 }
 .flip-card {
-  margin:15px;
+  margin: 15px;
 
   background-color: transparent;
   width: 200px;
   height: 200px;
-  border-radius:8%;
+  border-radius: 8%;
   perspective: 1000px; /*Remove this if you don't want the 3D effect */
 }
 
@@ -325,8 +322,7 @@ width: 250px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  border-radius:8%;
-
+  border-radius: 8%;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -335,7 +331,8 @@ width: 250px;
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -345,9 +342,9 @@ width: 250px;
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-padding:10px;
+  padding: 10px;
 
-  border-radius:8%;
+  border-radius: 8%;
 
   background: rgb(131, 58, 180);
   background: linear-gradient(
@@ -362,19 +359,63 @@ padding:10px;
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
-
 }
-
 /* Style the back side */
 .flip-card-back {
-padding:10px;
+  padding: 10px;
   background-color: #ffc500;
   color: #000;
   transform: rotateY(180deg);
-  border-radius:8%;
-
+  border-radius: 8%;
 }
-.about-wrapper{
+.about-wrapper {
   display: flex;
   justify-content: baseline;
+  border-top: solid #000;
+  border-width: 1px;
+}
+.col-meet-expert-on-about-pg {
+  background-color: #ff9700;
+  margin: 10px;
+  box-shadow: 0 0 5px 10px #ff9700;
+  margin-top: 30px;
+}
+.about-col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 4px;
+}
+.desert {
+  width: 100%;
+  border-radius:30px;
+  /* object-fit: cover;*/
+  object-fit: contain;
+  /* object-position: center left;  */
+  margin: 16px;
+}
+.about-spacer {
+  margin: 40px;
+}
+.free-quote-btn-global {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 125px;
+  height: 50px;
+  background-color: #000;
+  color: whitesmoke;
+  /* border-width: 4px; */
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 9px;
+}
+.quote-col {
+  display: flex;
+  justify-content: center;
 }

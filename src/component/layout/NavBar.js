@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
 
 // Will need to add media query  for md and sm in separate style sheet or inline
 import { Spin as Hamburger } from 'hamburger-react';
@@ -20,9 +21,9 @@ const NavBar = () => {
     @media (max-width: 768px) {
       display: none;
     }
-    `;
+  `;
 
-    // hamburger state
+  // hamburger state
   const [isOpen, setOpen] = useState(false);
 
   const closeMenu = () => {
@@ -34,7 +35,9 @@ const NavBar = () => {
       <Container className='nav-container'>
         <Row>
           <Col className='nav-quote-btn'>
-            <Button className='quote-btn'>Free Quote</Button>
+            <Link to='/quote'>
+              <button className='quote-btn'>Free Quote</button>
+            </Link>
           </Col>
           <Col className='follow-heading'>
             <h3>Follow us</h3>
@@ -92,21 +95,19 @@ const NavBar = () => {
             </HideDesktopNavBar>
           </Col>
         </Row>
-                <ResponsiveMenu>
-
-                 <Hamburger
-              toggled={isOpen}
-              toggle={setOpen}
-              label="Show menu"
-              onClick={() => setOpen(!isOpen)}
-              color='whitesmoke'
-              size={40}
-              className='hamburger'
-              
-              />
-              <div className='hamburger-spacer'></div>
-            {isOpen ? <MobileMenu onClick={closeMenu} /> : ''} 
-              </ResponsiveMenu>
+        <ResponsiveMenu>
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            label='Show menu'
+            onClick={() => setOpen(!isOpen)}
+            color='whitesmoke'
+            size={40}
+            className='hamburger'
+          />
+          <div className='hamburger-spacer'></div>
+          {isOpen ? <MobileMenu onClick={closeMenu} /> : ''}
+        </ResponsiveMenu>
       </Container>
     </>
   );

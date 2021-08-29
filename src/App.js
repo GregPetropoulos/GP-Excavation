@@ -7,7 +7,7 @@ import About from './component/layout/About';
 import Contact from './component/layout/Contact';
 import ServicePage from './component/layout/ServicePage';
 import Projects from './component/layout/Projects';
-
+import QuoteForm from'./component/layout/QuoteForm'
 
 
 function App() {
@@ -21,6 +21,9 @@ function App() {
         <Route exact path='/service' component={ServicePage} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/quote' component={QuoteForm} />
+
+
       </Switch>
     </Router>
   );
