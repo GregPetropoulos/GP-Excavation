@@ -8,6 +8,7 @@ import Contact from './component/layout/Contact';
 import ServicePage from './component/layout/ServicePage';
 import Projects from './component/layout/Projects';
 import QuoteForm from'./component/layout/QuoteForm'
+import Footer from '../src/component/Footer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
 
       </Switch>
+      <Footer/>
     </Router>
   );
 }

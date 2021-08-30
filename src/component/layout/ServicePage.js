@@ -1,18 +1,16 @@
-import React from 'react'
-import FlipCard from '../FlipCard'
-import Contact from './Contact'
-import Counter from '../Counter'
+import React from 'react';
+import FlipCard from '../FlipCard';
+import Counter from '../Counter';
 
 const ServicePage = () => {
-    return (
-        <>
-        <div>
-            <FlipCard/>
-            <Counter/>
-            <Contact/>
-        </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div>
+        <FlipCard />
+        <Counter />
+      </div>
+    </>
+  );
+};
 
-export default ServicePage
+export default ServicePage;

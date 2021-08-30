@@ -1,7 +1,6 @@
 import React from 'react';
 import MeetExpert from '../MeetExpert';
 import { Col, Row } from 'react-bootstrap';
-import Contact from './Contact';
 import desert from '../../images/desert.jpg';
 import { Link } from 'react-router-dom';
 
@@ -58,9 +57,6 @@ const About = () => {
           exercitation culpa magna excepteur voluptate non ex minim dolore.
         </p>
         <div className='about-spacer'></div>
-        <Col>
-          <Contact />
-        </Col>
       </Col>
     </Row>
   );

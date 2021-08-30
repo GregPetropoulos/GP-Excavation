@@ -11,9 +11,9 @@ import grading from '../../images/grading.jpeg';
 import rental from '../../images/rental.jpeg';
 import landClearing from '../../images/land-clearing.jpeg';
 
-const Projects = (projectImage) => {
+const Projects = () => {
   return (
-    <Container>
+    <>
       <Row className='main-photo-row-projects'>
         {/* <Col> */}
           <ProjectsListed
@@ -66,8 +66,7 @@ const Projects = (projectImage) => {
           />
         {/* </Col> */}
       </Row>
-      <Contact/>
-    </Container>
+    </>
   );
 };
 
