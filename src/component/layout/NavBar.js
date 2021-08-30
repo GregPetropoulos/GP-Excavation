@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
 
 // Will need to add media query  for md and sm in separate style sheet or inline
 import { Spin as Hamburger } from 'hamburger-react';

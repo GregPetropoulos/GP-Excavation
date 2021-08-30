@@ -4,7 +4,8 @@ import Footer from '../Footer';
 import Counter from '../Counter';
 import MeetExpert from '../MeetExpert';
 import FlipCard from '../FlipCard';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (

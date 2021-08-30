@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const FlipCard = () => {
   return (
@@ -19,9 +20,15 @@ const FlipCard = () => {
                   <p>Trenching</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Utility Trenching</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>
@@ -36,9 +43,15 @@ const FlipCard = () => {
                   <p>Grading</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Grading</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>
@@ -56,9 +69,15 @@ const FlipCard = () => {
                   <p>Septic Install</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Septic Install</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>
@@ -78,9 +97,15 @@ const FlipCard = () => {
                   <p>Land Clearing</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Land Clearing</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>
@@ -97,9 +122,15 @@ const FlipCard = () => {
                   <p>Operate Machine Rental</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Operate Machine Rental</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>
@@ -116,9 +147,15 @@ const FlipCard = () => {
                   <p>Compaction</p>
                 </div>
                 <div className='flip-card-back'>
-                  <h1>GP Excavation</h1>
+                  <h1 style={{ lineHeight: '.9' }}>GP Excavation</h1>
                   <p>Compaction</p>
-                  <button>quote</button>
+                  <Col className='quote-col'>
+                    <Link to='/quote'>
+                      <button className='free-quote-btn-global'>
+                        Free Quote
+                      </button>
+                    </Link>
+                  </Col>
                 </div>
               </div>
             </div>

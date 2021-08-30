@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import EmailForm from './EmailForm';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -30,6 +31,11 @@ const Footer = () => {
 
             <i className='fas fa-mobile-alt fa-2x'></i>760-605-2024
                 </div>
+                <Col className='quote-col'>
+          <Link to='/quote'>
+            <button className='free-quote-btn-global'>Custom Quote</button>
+          </Link>
+          </Col>
           </Col>
         <Col className='footer-newsletter-wrapper'>
           <h1>Newsletter</h1>

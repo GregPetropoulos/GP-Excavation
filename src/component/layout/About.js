@@ -11,9 +11,9 @@ const About = () => {
       <Col className='col-meet-expert-on-about-pg'>
         <MeetExpert />
         <Col className='quote-col'>
-        <Link to='/quote'>
-        <button className='free-quote-btn-global'>Free Quote</button>
-      </Link>
+          <Link to='/quote'>
+            <button className='free-quote-btn-global'>Custom Quote</button>
+          </Link>
         </Col>
       </Col>
       <Col className='about-col1'>
@@ -58,9 +58,9 @@ const About = () => {
           exercitation culpa magna excepteur voluptate non ex minim dolore.
         </p>
         <div className='about-spacer'></div>
-      <Col>
-        <Contact />
-      </Col>
+        <Col>
+          <Contact />
+        </Col>
       </Col>
     </Row>
   );
