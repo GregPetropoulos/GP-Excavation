@@ -464,6 +464,7 @@ height: 100%;
 
 
 /* new project overlay set up */
+/* -------------------- */
 
 .photo-container {
   object-fit: contain;
@@ -508,4 +509,68 @@ height: 100%;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+/* ------------- */
+.contact-form{
+  width:100%;
+  height: 100%;
+}
+.form-main-row{
+  border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin:15px;
+background-color: #FF9900;
+color:#000;
+height: 100%;
+width:100%
+/* text-align: center; */
+}
+.form-name{
+  margin:4px;
+
+}
+.form-email{
+  margin:4px;
+  
+}
+  .form-budget{
+    margin:4px;
+  
+  }
+  .form-subject{
+    margin:4px;
+
+  }
+.form-message{
+  margin:2px;
+  resize:vertical;
+  height: 250px;
+  width: 400px;
+}
+.label-text-combo{
+  display: flex;
+  justify-content: center;
+}
+.form-label-message{
+  /* margin-bottom:60px; */
+  /* padding-bottom: 30px; */
+}
+.form-btn{
+  cursor: pointer;
+  height:40px;
+  width:75px;
+  border-radius: 10px;
+  color:whitesmoke;
+  background-color: #000;
+  margin:10px;
+}
+.form-btn:hover{
+background-color: rgb(70, 67, 67);
+}
+.form-btn-row{
+  display: flex;
+  justify-content: center;
 }

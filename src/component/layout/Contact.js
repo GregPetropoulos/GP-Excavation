@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Footer from '../Footer';
-import QuoteForm from '../layout/QuoteForm'
+// import QuoteForm from '../layout/QuoteForm'
+import ContactUs from './ContactUs';
 
 const Contact = () => {
   return (
     <Container>
-  <QuoteForm/>
+  <ContactUs/>
     </Container>
   );
 };
