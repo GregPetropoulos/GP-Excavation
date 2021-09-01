@@ -1,8 +1,13 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Col, Row, Button } from 'react-bootstrap';
+// import * as emailjs from "emailjs-com";
 
-export default function ContactUs() {
+import { Col, Row, Button } from 'react-bootstrap';
+import styled from ''
+import{ init } from 'emailjs-com';
+init("user_7uuVTJTCnZ8xpy2qeVaJr");
+
+const ContactUs= () => {
   function sendEmail(e) {
     e.preventDefault();
 
@@ -23,6 +28,13 @@ export default function ContactUs() {
       );
     e.target.reset();
   }
+  // const ResponsiveForm=`styled.div
+  // {
+  //   @media (min-width:400px){
+  //     .form
+
+  //   }
+  // }`
 
   return (
     <form className='contact-form' onSubmit={sendEmail}>
@@ -83,3 +95,4 @@ export default function ContactUs() {
     </form>
   );
 }
+export default ContactUs;

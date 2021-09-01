@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import QuoteForm from '../layout/QuoteForm'
-import ContactUs from './ContactUs';
+import ContactMe from '../ContactMe';
 
 const Contact = () => {
   return (
     <Container>
-  <ContactUs/>
+  <ContactMe/>
     </Container>
   );
 };

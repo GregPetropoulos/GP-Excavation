@@ -387,7 +387,7 @@ video {
 }
 .desert {
   width: 100%;
-  border-radius:30px;
+  border-radius: 30px;
   /* object-fit: cover;*/
   object-fit: contain;
   /* object-position: center left;  */
@@ -402,7 +402,7 @@ video {
   font-size: 1.1rem;
   width: 125px;
   height: 50px;
-  cursor:pointer;
+  cursor: pointer;
   background-color: #000;
   color: whitesmoke;
   padding: 2px;
@@ -413,7 +413,7 @@ video {
     0 100px 80px rgba(0, 0, 0, 0.12);
   border-radius: 9px;
 }
-.free-quote-btn-global:hover{
+.free-quote-btn-global:hover {
   background-color: #ff0000;
 }
 .quote-col {
@@ -421,47 +421,42 @@ video {
   justify-content: center;
   margin-bottom: 25px;
 }
-.projectImage{
+.projectImage {
   /* object-fit: cover; */
-/* width:100%; */
-/* height:100%; */
-/* opacity: 1;
+  /* width:100%; */
+  /* height:100%; */
+  /* opacity: 1;
   display: block;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden; */
 }
-.photo-grid-row-projects{
+.photo-grid-row-projects {
   /* position: relative; */
   /* width: 100%; */
-
 }
-.photo-grid-col-projects{
+.photo-grid-col-projects {
   /* position: relative; */
 
-/* width:100%; */
-/* height:100%; */
+  /* width:100%; */
+  /* height:100%; */
 }
 
-
-.latest-project-row-container{
+.latest-project-row-container {
   /* display:flex;
   justify-content: center; */
 }
-.description-projects{
+.description-projects {
   /* text-align: center; */
   /* word-wrap: break-word; */
 }
-.main-photo-row-projects{
-/* display:flex;
+.main-photo-row-projects {
+  /* display:flex;
 flex-direction: row; */
-width:100%;
-height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
-
-
 
 /* new project overlay set up */
 /* -------------------- */
@@ -477,14 +472,13 @@ height: 100%;
   opacity: 1;
   display: block;
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
-  height:100%;
-
+  height: 100%;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -492,8 +486,7 @@ height: 100%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  height:100%;
-
+  height: 100%;
 }
 
 .container:hover .image {
@@ -505,72 +498,93 @@ height: 100%;
 }
 
 .text {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
 /* ------------- */
-.contact-form{
-  width:100%;
+.contact-form {
+  width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  /* border-color: #000;
+border-width: 5px; */
 }
-.form-main-row{
+.form-main-row {
   border-radius: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin:15px;
-background-color: #FF9900;
-color:#000;
-height: 100%;
-width:100%
-/* text-align: center; */
+  border-color: #000;
+  border-width: 20px;
+  flex-wrap: wrap;
+  margin: 15px;
+  background-color: #ff9900;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
 }
-.form-name{
-  margin:4px;
-
+.form-name {
+  margin-bottom: 20px;
+  font-size: 18px;
+  height:30px;
+  width:200px;
+  border-radius: 5px;
 }
-.form-email{
-  margin:4px;
-  
+.form-email {
+  margin-bottom: 20px;
+  font-size: 18px;
+  height:30px;
+  width:200px;
+  border-radius: 5px;
 }
-  .form-budget{
-    margin:4px;
-  
-  }
-  .form-subject{
-    margin:4px;
-
-  }
-.form-message{
-  margin:2px;
-  resize:vertical;
-  height: 250px;
-  width: 400px;
+.form-budget {
+  margin-bottom:20px;
+  font-size: 18px;
+  height:30px;
+  width:200px;
+  border-radius: 5px;
 }
-.label-text-combo{
-  display: flex;
-  justify-content: center;
+.form-subject {
+  margin-bottom:20px;
+  font-size: 18px;
+  height:30px;
+  width:200px;
+  border-radius: 5px;
 }
-.form-label-message{
-  /* margin-bottom:60px; */
-  /* padding-bottom: 30px; */
+textarea {
+  width: 100%;
+  resize: vertical;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 150px;
 }
-.form-btn{
+.form-btn {
   cursor: pointer;
-  height:40px;
-  width:75px;
-  border-radius: 10px;
-  color:whitesmoke;
+  font-weight: 700px;
+  font-size: 1.4rem;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  color: whitesmoke;
   background-color: #000;
-  margin:10px;
+  margin: 10px;
 }
-.form-btn:hover{
-background-color: rgb(70, 67, 67);
+.form-btn:hover {
+  background-color: rgb(70, 67, 67);
 }
-.form-btn-row{
+.form-btn-row {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+.form-phone{
+  font-size: 18px;
+  height:30px;
+  width:200px;
+  border-radius: 5px;
+  margin-bottom:20px;
+
 }

@@ -7,7 +7,7 @@ import About from './component/layout/About';
 import Contact from './component/layout/Contact';
 import ServicePage from './component/layout/ServicePage';
 import Projects from './component/layout/Projects';
-import QuoteForm from'./component/layout/QuoteForm'
+import ContactMe from'./component/ContactMe'
 import Footer from '../src/component/Footer';
 
 
@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/service' component={ServicePage} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/quote' component={QuoteForm} />
+        <Route exact path='/quote' component={ContactMe} />
 
 
       </Switch>
