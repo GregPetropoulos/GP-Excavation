@@ -8,10 +8,7 @@ export default function ContactMe() {
 
     emailjs
       .sendForm(
-        'service_unyefet',
-        'contact_form',
-        e.target,
-        'user_7uuVTJTCnZ8xpy2qeVaJr'
+        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
       )
       .then(
         (result) => {
