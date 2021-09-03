@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Footer = () => {
+    
   const FooterResponsive = styled.div`
     @media (max-width: 585px) {
       .footer-wrapper {

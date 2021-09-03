@@ -8,18 +8,24 @@ export default function ContactMe() {
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        `gmail`,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_YOUR_USER_ID
       )
       .then(
         (result) => {
+          alert('Message Sent, We will get back to you shortly');
           console.log(result.text);
         },
         (error) => {
+          alert('An error occurred, Please try again');
           console.log(error.text);
         }
-      );
-    e.target.reset();
-  }
+        );
+        
+        e.target.reset();
+      }
 
   return (
     <form className='contact-form' onSubmit={sendEmail}>
