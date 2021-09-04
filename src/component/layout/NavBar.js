@@ -42,10 +42,22 @@ const NavBar = () => {
             <h3>Follow us</h3>
           </Col>
           <Col className='navbar-icons'>
-            <i className='fab fa-instagram'></i>
-            <i className='fab fa-facebook-f'></i>
-            <i className='fab fa-twitter'></i>
-            <i className='fab fa-linkedin'></i>
+            <a href='123' target='_blank' rel='noreferrer'>
+              <i className='fab fa-instagram'></i>
+            </a>
+            <a
+              href='https://www.facebook.com/GPExcavation-103086617779983/?ref=py_c'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fab fa-facebook-f'></i>
+            </a>
+            <a href='123' target='_blank' rel='noreferrer'>
+              <i className='fab fa-twitter'></i>
+            </a>
+            <a href='123' target='_blank' rel='noreferrer'>
+              <i className='fab fa-linkedin'></i>
+            </a>
           </Col>
         </Row>
 

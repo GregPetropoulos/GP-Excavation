@@ -25,9 +25,9 @@ const Hero = () => {
         />
         <div className='hero-overlay'>
           <div className='hero-wrapper-box'>
-            <p>
-              Build Your <span className='dream'>Dream</span>
-            </p>
+              <p>
+                Build Your <span className='dream'>Dream</span>
+              </p>
             <div>
               <p className='hero-message' style={{ fontSize: '1rem' }}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -35,9 +35,8 @@ const Hero = () => {
                 enim ad minim.
               </p>
             </div>
-
             <Link to='/projects'>
-              <Button className='discover-button'>Discover</Button>
+              <button className='discover-button'>Discover</button>
             </Link>
           </div>
         </div>
