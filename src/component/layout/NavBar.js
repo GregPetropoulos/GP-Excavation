@@ -68,8 +68,8 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to='/blog' className='desktop-links'>
-                    Blog
+                  <Link to='/license' className='desktop-links'>
+                    License
                   </Link>
                 </li>
                 <li>

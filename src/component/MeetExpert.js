@@ -1,6 +1,7 @@
 import React from 'react';
 import Expert from '../images/expert.jpg';
 import { Col, Row } from 'react-bootstrap';
+import SocialIcons from './SocialIcons';
 const MeetExpert = () => {
   return (
     <>
@@ -10,12 +11,13 @@ const MeetExpert = () => {
       <div className='profile-overlay-icons'>
         <div className='profile-icons-hover'>
           {' '}
-          <Col className='navbar-icons'>
+          {/* <Col className='navbar-icons'>
             <i className='fab fa-instagram'></i>
             <i className='fab fa-facebook-f'></i>
             <i className='fab fa-twitter'></i>
             <i className='fab fa-linkedin'></i>
-          </Col>
+          </Col> */}
+          <SocialIcons/>
         </div>
       </div>
       <h2> Founder/Owner and Operator.</h2>

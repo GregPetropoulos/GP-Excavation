@@ -33,8 +33,8 @@ export const MobileMenu = ({onClick})=> {
                </Link>
              </li>
              <li>
-               <Link to='/blog' className='mobile-links'>
-                 Blog
+               <Link to='/license' className='mobile-links'>
+                 License
                </Link>
              </li>
              <li>
