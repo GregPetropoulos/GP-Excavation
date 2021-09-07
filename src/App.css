@@ -220,6 +220,7 @@ video {
 .footer-email-link {
   text-decoration: none;
   color: black;
+  width:100%;
 }
 .footer-newsletter-wrapper {
   text-align: center;

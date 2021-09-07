@@ -12,16 +12,18 @@ const Footer = () => {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width:100%;
+
       }
       .footer-about-wrapper {
         border-right: #ffc500;
       }
       .footer-contact-wrapper {
         border-right: #ffc500;
-        // display:flex;
-        // flex-direction:row;
-        // justify-content:center;
+        text-align:center;
+        width:100%;
       }
+
     }
   `;
   return (
