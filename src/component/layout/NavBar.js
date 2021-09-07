@@ -21,7 +21,25 @@ const NavBar = () => {
     @media (max-width: 768px) {
       display: none;
     }
+    }
   `;
+  const ResponsiveLogo = styled.div`
+  @media (max-width:450px){
+    .logo-container {
+      display: flex;
+      flex-direction:column;
+      width:100%;
+      justify-content:center;
+
+    }
+    .logo-container i{
+     text-align:center;
+    }
+    .logo{
+      text-align:center;
+      width:100%;
+    }
+    `;
 
   // hamburger state
   const [isOpen, setOpen] = useState(false);
@@ -40,10 +58,12 @@ const NavBar = () => {
       <SocialIcons />
       <Row>
         <Col>
-          <div>
-            <i className='fas fa-hard-hat fa-3x'></i>{' '}
-            <span className=' logo'>GP Excavation</span>
-          </div>
+          <ResponsiveLogo>
+            <div className='logo-container'>
+              <i className='fas fa-hard-hat fa-3x'></i>{' '}
+              <span className=' logo'>GP Excavation</span>
+            </div>
+          </ResponsiveLogo>
           <HideDesktopNavBar>
             <nav>
               <ul className='link-items'>

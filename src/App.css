@@ -139,6 +139,10 @@ video {
   /* word-wrap: break-word; */
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-left:30px;
+  padding-right:30px;
+
 }
 
 .discover-button {
@@ -201,6 +205,8 @@ video {
 /* .hamburger-spacer {
   margin-right: 29px;
 } */
+
+/* FOOTER */
 .footer-wrapper {
   height: 100%;
   padding: 4px;
@@ -240,6 +246,7 @@ video {
 
 }
 
+/* COUNTER */
 .counter-wrapper {
   display: flex;
   justify-content: space-between;
@@ -266,6 +273,12 @@ text-align:center;
   text-align: center;
 }
 
+/* MEET EXPERT */
+.expert-row{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .expert-spacer {
   background-color: whitesmoke;
   height: 60px;
@@ -277,20 +290,29 @@ text-align:center;
   position: relative;
   width: 250px;
 }
+.profile-image-wrapper h2{
+  text-align: center;
+}
 .profile-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center right;
-
   opacity: 1;
   display: block;
-  /* width: 100%; */
-  /* height: auto; */
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
+/* .field-image{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  padding:25px;
+} */
+
 .profile-overlay-icons {
   transition: 0.5s ease;
   opacity: 0;
@@ -312,9 +334,9 @@ text-align:center;
   color: whitesmoke;
   font-size: 16px;
   padding: 16px 32px;
-  border-radius: 6px/6%;
+  border-radius: 10px;
 }
-/* flipcard 2nd attempt */
+/* FLIPCARD */
 .service-card-container {
   display: 'flex';
   width: 100%;
@@ -396,6 +418,7 @@ text-align:center;
 .about-wrapper {
   border-top: solid #000;
   border-width: 1px;
+  width:100%;
 }
 .col-meet-expert-on-about-pg {
   background-color: #ff9700;
@@ -436,6 +459,7 @@ padding-top:20px;
 padding-right:20px;
 padding-left:20px;
 margin-bottom:10px;
+margin-right: 30px;
 /* word-wrap: wrap; */
 }
 .desert {

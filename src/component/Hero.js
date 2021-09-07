@@ -30,9 +30,8 @@ const Hero = () => {
               </p>
             <div>
               <p className='hero-message' style={{ fontSize: '1rem' }}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim.
+              Why Choose Us?
+From residential back yards , to sub division utility excavation. Every project is finished safely in a timely manner. 
               </p>
             </div>
             <Link to='/projects'>
