@@ -3,7 +3,7 @@ import React from 'react';
 const License = () => {
   return (
       <>
-      <table className='table'>
+      <table>
         <thead>
           <tr>
             <th>#</th>

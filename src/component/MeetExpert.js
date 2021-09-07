@@ -11,12 +11,7 @@ const MeetExpert = () => {
       <div className='profile-overlay-icons'>
         <div className='profile-icons-hover'>
           {' '}
-          {/* <Col className='navbar-icons'>
-            <i className='fab fa-instagram'></i>
-            <i className='fab fa-facebook-f'></i>
-            <i className='fab fa-twitter'></i>
-            <i className='fab fa-linkedin'></i>
-          </Col> */}
+          
           <SocialIcons/>
         </div>
       </div>

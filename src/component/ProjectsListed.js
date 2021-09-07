@@ -4,21 +4,7 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Container} from 'react-bootstrap';
 
 const ProjectsListed = ({ title, projectImage, description, children }) => {
-  return (
-    // <Row className='photo-grid-row-projects'>
-    //   <Col className='photo-grid-col-projects'>
-    //     <div className='project-image-wrapper'>
-    //       <div className='overlay-project'>
-    //         <div className='overlay-on-hover'>
-    //           <h2>{title}</h2>
-    //           <p className='description-projects'>{description}</p>
-    //         </div>
-    //       </div>
-    //       <img src={projectImage} style={{width:'100%'}}alt='greg-projects' className='projectImage' />
-    //       {/* {children} */}
-    //     </div>
-    //   </Col>
-    // </Row>
+  return (    
     <Container className='photo-container'>
 <div className='project-row'>
 
