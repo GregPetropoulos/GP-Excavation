@@ -24,10 +24,10 @@ const MeetExpert = () => {
             </div>
           </div>
           <h2> Founder/Owner and Operator.</h2>
-          <section>
+          <p className='founder-info'>
             I am Greg Petropoulos loremVoluptate laboris in consectetur laboris
             ut aliqua non fugiat mollit ipsum.
-          </section>
+          </p>
         </Col>
         {/* <FieldImage/> */}
       </Row>

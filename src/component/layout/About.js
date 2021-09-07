@@ -6,7 +6,24 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const About = () => {
-  const ResponsiveAbout = styled.div``;
+  const ResponsiveAbout = styled.div`
+  @media (max-width:620px){
+display:flex;
+flex-direction:column;
+justify-content;center;
+width:100vw;
+.about-middle-row{
+  display:flex;
+  flex-direction:column-reverse;
+  width:100vw;
+}
+.desert{
+  // margin-right:20px;
+}
+.history-col{
+  // width:100vw;
+}
+  }`;
   return (
     <ResponsiveAbout>
       <Container>
