@@ -43,7 +43,7 @@ const Footer = () => {
               gpetroconstruction@gmail.com
             </a>
             <i className='fas fa-mobile-alt fa-2x'></i>
-            <a href='760-605-2024'>760-605-2024</a>
+            <a href='tel:760-605-2024'>760-605-2024</a>
           </div>
           <Col className='quote-col'>
             <Link to='/quote'>

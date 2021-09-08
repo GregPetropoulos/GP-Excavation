@@ -48,13 +48,47 @@ a {
   color: #000;
   transform: scale(1.3);
 }
-
+.nav-top-row {
+  display: flex;
+  justify-content: space-between;
+}
 .nav-quote-btn {
   /* background:yellow; */
   display: flex;
   justify-content: center;
   padding-top: 1%;
   height: 100%;
+  width: 100%;
+}
+.nav-phone-row {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-phone {
+  color: #000;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 10px 5px 9px #000;
+  cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 20%;
+  height: 50px;
+}
+.nav-phone a {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+.nav-phone a:hover {
+  text-decoration: none;
+  color: #ffc500;
 }
 .quote-btn {
   padding: 10px;
@@ -83,6 +117,19 @@ nav {
   justify-content: space-around;
   width: 100%;
   text-decoration: none;
+  color: #000;
+  background-color: #ffc500;
+}
+.desktop-links:hover,
+.desktop-links:focus {
+  color: #ffc500;
+  background-color: #000;
+}
+.desktop-links {
+  width: 100%;
+  transition: all 1.7s ease-in-out;
+  border-radius: 12px;
+  padding: 7px;
 }
 nav > ul > li > a {
   text-decoration: none;
@@ -580,16 +627,13 @@ flex-direction: row; */
 .contact-form {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  /* border-color: #000;
-border-width: 5px; */
+  padding: 40px;
 }
 .form-main-row {
   border-radius: 5px;
   border-color: #000;
   border-width: 20px;
   flex-wrap: wrap;
-  margin: 15px;
   background-color: #ff9900;
   color: #000;
   height: 100%;
@@ -697,15 +741,15 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
   flex-flow: row nowrap;
-  flex-shrink:1;
+  flex-shrink: 1;
   word-break: break-word;
   height: auto;
-  width:8%;
+  width: 8%;
   flex-direction: column;
   align-items: center;
 }
-.table-row-number{
-/* padding-top:4px; */
+.table-row-number {
+  /* padding-top:4px; */
 }
 .license-col2 {
   overflow: hidden;
@@ -716,17 +760,17 @@ textarea {
   width: 100%;
   flex-direction: column;
   align-items: center;
-padding:4px;
+  padding: 4px;
 }
-.license-col3{
-  flex-shrink:4;
+.license-col3 {
+  flex-shrink: 4;
   height: auto;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-.license-col4{
-  flex-shrink:4;
+.license-col4 {
+  flex-shrink: 4;
   height: auto;
   width: 100%;
   flex-direction: column;

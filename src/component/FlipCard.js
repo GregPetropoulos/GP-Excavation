@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 const FlipCard = () => {
   const ResponsiveFlipCard = styled.div`
+
   @media (max-width: 700px) {
     .services-title
     .service-card-container {
@@ -17,6 +18,7 @@ justify-content:center;
     display: flex;
     flex-direction:column;
     justify-content: center;
+
     }
     .flipcard-row2{
       display: flex;

@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-
-// Will need to add media query  for md and sm in separate style sheet or inline
+import { motion } from 'framer-motion';
 import { Spin as Hamburger } from 'hamburger-react';
-import { MobileMenu } from '../MobileMenu';
 import SocialIcons from '../SocialIcons';
 
 const NavBar = () => {
@@ -15,12 +13,55 @@ const NavBar = () => {
     @media (min-width: 768px) {
       display: none;
     }
-  `;
+    @media (max-width: 768px) {
+      // .mobilenav {
+      //   z-index:9999;
+      //   width:100%;
+      //   height:100%;
+      //   position:relative;
+      // }
+      .link-items {
+        // position:absolute;
+        background-color: #000;
+        width: 100%;
+        height:450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 4px whitesmoke;
+        z-index: 99999;
+      }
 
+      .desktop-links {
+        width: 100%;
+        height: 100%;
+        color: #ffc500;
+        background-color: #000;
+        transition: all 1.4s ease-out;
+      }
+      .desktop-links:hover,
+      .desktop-links:focus {
+        color: #000;
+        background-color: #ffc500;
+        border-radius: 9px;
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        margin: 5px;
+      }
+    }
+  `;
+  const ResponsivePhone = styled.div`
+    @media (max-width: 807px) {
+      display: none;
+    }
+  `;
   const HideDesktopNavBar = styled.div`
     @media (max-width: 768px) {
       display: none;
-    }
+       {
+      }
     }
   `;
   const ResponsiveLogo = styled.div`
@@ -40,21 +81,32 @@ const NavBar = () => {
       width:100%;
     }
     `;
-
   // hamburger state
   const [isOpen, setOpen] = useState(false);
 
   const closeMenu = () => {
     setOpen(!isOpen);
   };
+  const animateFrom = { opacity: 0, x: -600 };
+  const animateTo = { opacity: 1, x: 0 };
 
   return (
     <Container className='nav-container'>
-      <Col className='nav-quote-btn'>
-        <Link to='/quote'>
-          <button className='quote-btn'>Free Quote</button>
-        </Link>
-      </Col>
+      <Row className='nav-top-row'>
+        <Col className='nav-quote-btn'>
+          <Link to='/quote'>
+            <button className='quote-btn'>Free Quote</button>
+          </Link>
+        </Col>
+      </Row>
+      <ResponsivePhone>
+        <Row className='nav-phone-row'>
+          <Col className='nav-phone'>
+            <i className='fas fa-mobile-alt fa-2x'></i>
+            <a href='tel:760-605-2024'>760-605-2024</a>
+          </Col>
+        </Row>
+      </ResponsivePhone>
       <SocialIcons />
       <Row>
         <Col>
@@ -64,7 +116,11 @@ const NavBar = () => {
               <span className=' logo'>GP Excavation</span>
             </div>
           </ResponsiveLogo>
-          <HideDesktopNavBar>
+        </Col>
+      </Row>
+      <HideDesktopNavBar>
+        <Row>
+          <Col>
             <nav>
               <ul className='link-items'>
                 <li>
@@ -98,11 +154,10 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
-              {/* new hamburger */}
             </nav>
-          </HideDesktopNavBar>
-        </Col>
-      </Row>
+          </Col>
+        </Row>
+      </HideDesktopNavBar>
       <ResponsiveMenu>
         <Hamburger
           toggled={isOpen}
@@ -114,7 +169,80 @@ const NavBar = () => {
           className='hamburger'
         />
         <div className='hamburger-spacer'></div>
-        {isOpen ? <MobileMenu onClick={closeMenu} /> : ''}
+        {/* {isOpen ? <motion.nav onClick={closeMenu} /> : ''} */}
+        {isOpen ? (
+          <motion.nav
+          onClick={closeMenu}
+            initial={{ x: '100%' }}
+            animate={{x:'0'}}
+            transition={{
+                  delay: .0457,
+                  x: { type: 'spring', stiffness: 50 },
+                  default: { duration: 2 },
+                  easeOut:[0.17, 0.67, 0.83, 0.67]
+                }}
+                className='mobilenav'
+          >
+            <ul className='link-items'>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.05 }}
+              >
+                <Link to='/home' className='desktop-links'>
+                  Home
+                </Link>
+              </motion.li>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.1 }}
+              >
+                <Link to='/about' className='desktop-links'>
+                  About
+                </Link>
+              </motion.li>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.2 }}
+              >
+                <Link to='/service' className='desktop-links'>
+                  Services
+                </Link>
+              </motion.li>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.3 }}
+              >
+                <Link to='/projects' className='desktop-links'>
+                  Projects
+                </Link>
+              </motion.li>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.4 }}
+              >
+                <Link to='/license' className='desktop-links'>
+                  License
+                </Link>
+              </motion.li>
+              <motion.li
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.55 }}
+              >
+                <Link to='/contact' className='desktop-links'>
+                  Contact
+                </Link>
+              </motion.li>
+            </ul>
+          </motion.nav>
+        ) : (
+          ''
+        )}
       </ResponsiveMenu>
     </Container>
   );
