@@ -10,7 +10,9 @@ The new website is fully functional and ready for deployment. Utilized the Email
 See images below for most recent updates
 ## Main Page
 ![Main Page1](../client/src/images/rm1.png) 
-https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm1.png
+![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm1.png)
+
+
 
 ![Main Page2](../client/src/images/rm2.png) 
 
