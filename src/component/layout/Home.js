@@ -4,6 +4,7 @@ import Counter from '../Counter';
 import MeetExpert from '../MeetExpert';
 import FlipCard from '../FlipCard';
 import { Row, Col } from 'react-bootstrap';
+// import GoogleReviews from '../GoogleReviews';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Row className='expert-spacer'></Row>
       <MeetExpert />
       <FlipCard />
+      {/* <GoogleReviews/> */}
     </Fragment>
   );
 };

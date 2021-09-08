@@ -53,8 +53,8 @@ const NavBar = () => {
     }
   `;
   const ResponsivePhone = styled.div`
-    @media (max-width: 807px) {
-      display: none;
+    @media (max-width: 320px) {
+       display: none;
     }
   `;
   const HideDesktopNavBar = styled.div`
@@ -92,13 +92,6 @@ const NavBar = () => {
 
   return (
     <Container className='nav-container'>
-      <Row className='nav-top-row'>
-        <Col className='nav-quote-btn'>
-          <Link to='/quote'>
-            <button className='quote-btn'>Free Quote</button>
-          </Link>
-        </Col>
-      </Row>
       <ResponsivePhone>
         <Row className='nav-phone-row'>
           <Col className='nav-phone'>
@@ -107,6 +100,13 @@ const NavBar = () => {
           </Col>
         </Row>
       </ResponsivePhone>
+      {/* <Row className='nav-top-row'>
+        <Col className='nav-quote-btn'>
+          <Link to='/quote'>
+            <button className='quote-btn'>Free Quote</button>
+          </Link>
+        </Col>
+      </Row> */}
       <SocialIcons />
       <Row>
         <Col>
