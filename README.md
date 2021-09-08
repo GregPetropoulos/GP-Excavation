@@ -10,35 +10,27 @@ The new website is fully functional and ready for deployment. Utilized the Email
 See images below for most recent updates
 ## Main Page
 ![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm1.png)
-![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm2.png)
-![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm3.png)
-![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm4.png)
-## Mobile About Section
 
+## Main Page
+![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm2.png)
+
+## Main Page
+![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm3.png)
+
+## Main Page
+![main](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm4.png)
+
+
+## Mobile About Section
 ![Mobile About](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm5.png)
+
+## Mobile About Section
 ![Mobile About](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm6.png)
 
 ## Mobile Contact Section
-
 ![Mobile Contact](https://raw.githubusercontent.com/GregPetropoulos/GP-Excavation/main/src/images/rm7.png)
 
 
 # .....More to come
-
-
-
-![Main Page2](../client/src/images/rm2.png) 
-
-![Main Page3](./client/src/images/rm3.png) 
-
-![Main Page4](../client/src/images/rm4.png) 
-
-![Mobile About Section1](../client/src/images/rm5.png) 
-Mobile
-
-![Mobile About Section2](../client/src/images/rm6.png)
-
-
-![Mobile Contact Section](../client/src/images/rm7.png) 
 
 
