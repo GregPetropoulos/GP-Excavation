@@ -24,7 +24,7 @@ const NavBar = () => {
         // position:absolute;
         background-color: #000;
         width: 100%;
-        height:450px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -54,7 +54,7 @@ const NavBar = () => {
   `;
   const ResponsivePhone = styled.div`
     @media (max-width: 320px) {
-       display: none;
+      display: none;
     }
   `;
   const HideDesktopNavBar = styled.div`
@@ -172,22 +172,21 @@ const NavBar = () => {
         {/* {isOpen ? <motion.nav onClick={closeMenu} /> : ''} */}
         {isOpen ? (
           <motion.nav
-          onClick={closeMenu}
+            onClick={closeMenu}
             initial={{ x: '100%' }}
-            animate={{x:'0'}}
+            animate={{ x: '0' }}
             transition={{
-                  delay: .0457,
-                  x: { type: 'spring', stiffness: 50 },
-                  default: { duration: 2 },
-                  easeOut:[0.17, 0.67, 0.83, 0.67]
-                }}
-                className='mobilenav'
+              delay: 0.05,
+              x: { type: 'spring', stiffness: 39 },
+              default: { duration: 1.6 }
+            }}
+            className='mobilenav'
           >
             <ul className='link-items'>
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.05 }}
+                transition={{ delay: 0.1 }}
               >
                 <Link to='/home' className='desktop-links'>
                   Home
@@ -196,7 +195,7 @@ const NavBar = () => {
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.1 }}
+                transition={{ delay: 0.2 }}
               >
                 <Link to='/about' className='desktop-links'>
                   About
@@ -205,7 +204,7 @@ const NavBar = () => {
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.2 }}
+                transition={{ delay: 0.3 }}
               >
                 <Link to='/service' className='desktop-links'>
                   Services
@@ -214,7 +213,7 @@ const NavBar = () => {
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.4 }}
               >
                 <Link to='/projects' className='desktop-links'>
                   Projects
@@ -223,7 +222,7 @@ const NavBar = () => {
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.4 }}
+                transition={{ delay: 0.5 }}
               >
                 <Link to='/license' className='desktop-links'>
                   License
@@ -232,7 +231,7 @@ const NavBar = () => {
               <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.55 }}
+                transition={{ delay: 0.6 }}
               >
                 <Link to='/contact' className='desktop-links'>
                   Contact

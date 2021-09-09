@@ -1,7 +1,7 @@
 # GP-Excavation
 IN PROGRESS
 
-Building out an client website for excavation business. That was using a temp wix website.
+Building out an client website for excavation business, Client was using a temp wix website.
 
 The new website is fully functional and ready for deployment. Utilized the Email.js dependencies and protected keys needed for the access to Email.js, rather than build a backend for simple emails and forms for quotes.
 

@@ -2,7 +2,6 @@ import React from 'react';
 import MeetExpert from '../MeetExpert';
 import { Col, Container, Row } from 'react-bootstrap';
 import desert from '../../images/desert.jpg';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const About = () => {
@@ -50,7 +49,6 @@ width:100vw;
             <Col className='col-meet-expert-on-about-pg'>
               <MeetExpert />
             </Col>
-            {/* <Col className='about-col-spacer'>width maker</Col> */}
             <Col className='history-col'>
               <h2>Our History</h2>
               <p>
