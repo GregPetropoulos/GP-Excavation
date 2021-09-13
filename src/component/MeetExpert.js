@@ -1,8 +1,7 @@
 import React from 'react';
 import Expert from '../images/expert.jpg';
 // import Gpeowner from '../images/gpe-owner.jpeg';
-import FieldImage from'../component/FieldImage';
-
+import FieldImage from '../component/FieldImage';
 
 import SocialIcons from './SocialIcons';
 import styled from 'styled-components';
@@ -16,7 +15,11 @@ const MeetExpert = () => {
     <ResponsiveExpert>
       <Row className='expert-row'>
         <Col className='profile-image-wrapper'>
-          <img className='profile-image' src={Expert} alt='greg-petropoulos-profile'></img>
+          <img
+            className='profile-image'
+            src={Expert}
+            alt='greg-petropoulos-profile'
+          ></img>
           <div className='profile-overlay-icons'>
             <div className='profile-icons-hover'>
               {' '}

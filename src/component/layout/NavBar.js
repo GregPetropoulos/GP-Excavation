@@ -7,7 +7,7 @@ import { Spin as Hamburger } from 'hamburger-react';
 import SocialIcons from '../SocialIcons';
 
 const NavBar = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
+  // const [menuVisible, setMenuVisible] = useState(false);
 
   const ResponsiveMenu = styled.div`
     @media (min-width: 768px) {

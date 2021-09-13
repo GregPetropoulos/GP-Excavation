@@ -1,5 +1,5 @@
 // import React, { useState } from 'react';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import { Row, Col, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -61,10 +61,10 @@ export default function Counter() {
         </Row>
         <Row className='counter-row2'>
           <Col>
-          <h3 className='counter-title'>Number of Happy Customers</h3>
+            <h3 className='counter-title'>Number of Happy Customers</h3>
           </Col>
           <Col>
-          <h3 className='counter-title'>Number of Residential Projects</h3>
+            <h3 className='counter-title'>Number of Residential Projects</h3>
           </Col>
           <Col>
             <h3 className='counter-title'>Number of Commercial Projects</h3>

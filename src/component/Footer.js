@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import EmailForm from './EmailForm';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -12,18 +12,16 @@ const Footer = () => {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width:100%;
-
+        width: 100%;
       }
       .footer-about-wrapper {
         border-right: #ffc500;
       }
       .footer-contact-wrapper {
         border-right: #ffc500;
-        text-align:center;
-        width:100%;
+        text-align: center;
+        width: 100%;
       }
-
     }
   `;
   return (
@@ -54,7 +52,7 @@ const Footer = () => {
         <Col className='footer-newsletter-wrapper'>
           <h1>Newsletter</h1>
           <p>We only send promo offers, not a single spam.</p>
-            <EmailForm />
+          <EmailForm />
         </Col>
       </Row>
     </FooterResponsive>
