@@ -8,8 +8,8 @@ import Contact from './component/layout/Contact';
 import ServicePage from './component/layout/ServicePage';
 import Projects from './component/layout/Projects';
 import ContactMe from './component/ContactMe';
-import Footer from '../src/component/Footer';
-import License from '../src/component/layout/License';
+import Footer from './component/Footer';
+import License from './component/layout/License';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

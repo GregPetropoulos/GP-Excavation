@@ -1,7 +1,7 @@
 import React from 'react';
 import Expert from '../images/expert.jpg';
 // import Gpeowner from '../images/gpe-owner.jpeg';
-import FieldImage from '../component/FieldImage';
+import FieldImage from './FieldImage';
 
 import SocialIcons from './SocialIcons';
 import styled from 'styled-components';
