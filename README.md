@@ -1,5 +1,5 @@
 # GP-Excavation
-IN PROGRESS
+[Deployed Link](https://gpexcavation.herokuapp.com/)
 
 Building out an client website for excavation business, Client was using a temp wix website.
 
