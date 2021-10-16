@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Row, Col, Container } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -10,32 +10,35 @@ export default function Counter() {
     }
   }
   `;
-  const customerProps = useSpring({
-    val: 180,
-    from: { val: 0 },
-    config: { duration: 4000 }
-  });
 
-  const commercialProps = useSpring({
-    val: 60,
-    from: { val: 0 },
-    config: { duration: 3600 }
-  });
 
-  const resProps = useSpring({
-    val: 120,
-    from: { val: 0 },
-    config: { duration: 2450 }
-  });
+    const customerProps = useSpring({
+      val: 180,
+      from: { val: 0 },
+      config: { duration: 4000 }
+    });
+    
+    const commercialProps = useSpring({
+      val: 60,
+      from: { val: 0 },
+      config: { duration: 3600 }
+    });
+    
+    const resProps = useSpring({
+      val: 120,
+      from: { val: 0 },
+      config: { duration: 2450 }
+    });
+    
+    const coffeeProps = useSpring({
+      val: 8653,
+      from: { val: 0 },
+      config: { duration: 4000 }
+    });
 
-  const coffeeProps = useSpring({
-    val: 8653,
-    from: { val: 0 },
-    config: { duration: 4000 }
-  });
-
-  return (
-    <ResponsiveCounter>
+    
+    return (
+      <ResponsiveCounter>
       <Container className='count-wrapper'>
         <Row className='counter-row1'>
           <Col>
