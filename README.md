@@ -1,6 +1,10 @@
 # GP-Excavation
 [Deployed Link](https://gpexcavation.herokuapp.com/)
 
+![GP Excavation](https://user-images.githubusercontent.com/68525155/155804158-23b4d5ef-abf4-4bc4-a42a-f0836b53ff8f.gif)
+
+
+
 Building out an client website for excavation business, Client was using a temp wix website.
 
 The new website is fully functional and ready for deployment. Utilized the Email.js dependencies and protected keys needed for the access to Email.js, rather than build a backend for simple emails and forms for quotes.
